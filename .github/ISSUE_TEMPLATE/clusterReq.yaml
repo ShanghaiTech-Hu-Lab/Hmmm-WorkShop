@@ -1,0 +1,49 @@
+name: 实验室服务器工单
+description: 如果你在使用实验室服务器的过程中遇到了问题, 可以使用这个工单提问.
+title: "[clusterReq]: "
+labels: ["clusterReq"]
+projects:
+assignees:
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请依照以下选项详细描述你的问题.
+  - type: dropdown
+    id: reqtype
+    attributes:
+      label: 你遇到的问题是?
+      description: 
+      options:
+        - 安装新软件
+        - 环境配置问题
+        - 其它
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: biname
+    attributes:
+      label: 你在使用什么软件时遇到了问题?
+      description: 
+      placeholder: ex. miniconda
+    validations:
+      required: true
+  - type: input
+    id: biname
+    attributes:
+      label: 版本号:
+      description: 
+      placeholder: ex. 1.0.0
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 请详细描述你的请求:
+      description: 
+      placeholder: Tell us what you see!
+      value: 
+    validations:
+      required: true
+
