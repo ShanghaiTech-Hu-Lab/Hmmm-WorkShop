@@ -12,7 +12,7 @@ body:
   - type: dropdown
     id: reqtype
     attributes:
-      label: 你遇到的问题是?
+      label: "你遇到的问题是?"
       description: 
       options:
         - 安装新软件
@@ -24,7 +24,7 @@ body:
   - type: input
     id: biname
     attributes:
-      label: 你在使用什么软件时遇到了问题?
+      label: "你在使用什么软件时遇到了问题?"
       description: 
       placeholder: ex. miniconda
     validations:
@@ -32,7 +32,7 @@ body:
   - type: input
     id: biname
     attributes:
-      label: 版本号:
+      label: "版本号:"
       description: 
       placeholder: ex. 1.0.0
     validations:
@@ -40,7 +40,7 @@ body:
   - type: textarea
     id: what-happened
     attributes:
-      label: 请详细描述你的请求:
+      label: "请详细描述你的请求:"
       description: 
       placeholder: Tell us what you see!
       value: 
