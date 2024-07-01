@@ -2,8 +2,8 @@ name: 实验室服务器工单
 description: 如果你在使用实验室服务器的过程中遇到了问题, 可以使用这个工单提问.
 title: "[clusterReq]: "
 labels: ["clusterReq"]
-projects:
-assignees:
+projects: []
+assignees: []
 body:
   - type: markdown
     attributes:
@@ -30,7 +30,7 @@ body:
     validations:
       required: true
   - type: input
-    id: biname
+    id: version
     attributes:
       label: "版本号:"
       description: 
